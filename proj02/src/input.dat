@@ -1,0 +1,18 @@
+DISCRETIZATION_POINTS = 25           # Discretization points per dimension
+SOLVER_TYPE	          = 'Gauss-Seidel'  # Jacobi, Gauss-Seidel, or Petsc
+ORDER		          = 2               # 2 or 4
+DIMENSIONS	          = 1	            # 1 or 2
+MAX_ITERATIONS        = 250000          # Max iterations for linear solvers
+ERROR_THRESHOLD       = 1e-9            # Error between subsequent linear solver iterations
+
+A_X    = 10.0                           # A_x(Sin X)
+B_Y    = 10.0                           # B_y(Cos Y)
+K_0    = 1.0                            # Thermal conductivity 
+
+X_MIN  = 0
+X_MAX  = 1
+Y_MIN  = 0
+Y_MAX  = 1
+
+OUTPUT_MODE = 'INFO'                    # INFO or DEBUG
+RUN_MODE    = 'VERIFICATION'
